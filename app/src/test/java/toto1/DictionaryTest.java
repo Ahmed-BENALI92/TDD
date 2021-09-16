@@ -8,7 +8,7 @@ public class  DictionaryTest {
 
     @Test  public void testDictionaryName() 
         {
-        Dictionary dict = new Dictionary();
+        Dictionary dict = new Dictionary("Ex");
         assertThat(dict.getName(), equalTo("Example"));
         }
     

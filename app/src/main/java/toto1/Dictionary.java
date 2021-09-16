@@ -2,11 +2,11 @@ package toto1;
 
 public class Dictionary
 {
-    public String Name;
+    private String Name;
     
-    public  Dictionary()
+    public  Dictionary(String name)
     {
-
+        Name= name ;
     }
 
     public String getName()
