@@ -6,4 +6,5 @@
 Question:
 Fake IT :
 5- La valeur "example" du champ name
-
+2- Non ce n'est pas possible car les methode ne sont pas indépendante l'un de l'autre 
+3
