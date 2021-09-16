@@ -1,2 +1,4 @@
-[]Creer une classe Dictionary 
-[]Creer une classe Dictionary test 
+[X]Creer une classe Dictionary 
+[X]Creer une classe Dictionary test 
+[X]Creer le constructeur vide 
+[X]Creer la methode name 
