@@ -10,8 +10,8 @@ public class  DictionaryTest {
 
     @Before public void initiation()
     {
-        Dictionary dict = new Dictionary("Ex");
-    }    
+        Dictionary dict = new Dictionary("Example");
+    }  
     @Test  public void testDictionaryName() 
         {
          assertThat(dict.getName(), equalTo("Example"));
@@ -20,4 +20,8 @@ public class  DictionaryTest {
         {
             assertThat(dict.isEmpty(), equalTo("true"));
         }
+        @Test public void testOneTranslation() {
+            dict.addTranslation("contre", "against");
+            assertThat(dict.getTranslation("contre"), equalTo("against"));
+           }
 }
