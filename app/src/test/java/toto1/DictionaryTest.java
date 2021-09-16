@@ -7,15 +7,14 @@ import static org.hamcrest.Matchers.*;
 
 public class  DictionaryTest {
     public Dictionary dict;
-    
+
     @Before public void initiation()
     {
         Dictionary dict = new Dictionary("Ex");
     }    
     @Test  public void testDictionaryName() 
         {
-        
-        assertThat(dict.getName(), equalTo("Example"));
+         assertThat(dict.getName(), equalTo("Example"));
         }
     
 }

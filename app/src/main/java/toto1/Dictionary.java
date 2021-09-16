@@ -14,4 +14,13 @@ public class Dictionary
         return Name;
     }
 
+    public boolean isEmpty()
+    {
+        if(Name != null)
+        {
+            return true ;
+        }
+        return false;
+    }
+
 }
