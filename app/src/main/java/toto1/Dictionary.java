@@ -1,14 +1,14 @@
 package toto1;
-
+import java.util.HashMap;
 public class Dictionary
 {
     private String Name;
-    private String Translate1;
-    private String Translate2;
+    HashMap <String,String> Translations;
 
     public  Dictionary(String name)
     {
         Name= name ;
+        Translations = new HashMap<String, String>();
     }
 
     public String getName()
@@ -27,15 +27,14 @@ public class Dictionary
 
     public void addTranslation(String translate1 , String translate2)
     {
-        Translate1 = translate1;
-        Translate2 = translate2;
+        Translations.put(translate1,translate2);
+        Translations.put(translate2,translate1);
     }
 
     public String getTranslation(String Translate)
     {
-        if(this.Translate1 == Translate)return this.Translate2;
-        if(this.Translate2 == Translate)return this.Translate1;
-        return "Erreur";
+        if(Translations.get(Translate)==null)return "Erreur";
+        return Translations.get(Translate);
     }
 
 }
