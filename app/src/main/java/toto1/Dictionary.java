@@ -18,9 +18,9 @@ public class Dictionary
 
     public String isEmpty()
     {
-        if(Name == null)
+        if(Name == null && Translations.size()==0)
         {
-            return "true" ;
+            return "true";
         }
         return "false";
     }

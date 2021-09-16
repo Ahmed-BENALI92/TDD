@@ -18,7 +18,9 @@ public class  DictionaryTest {
         }
     @Test public void TestDictionaryisEmpty()
         {
+            
             assertThat(dict.isEmpty(), equalTo("false"));
+           
         }
     @Test public void testOneTranslation() 
         {
