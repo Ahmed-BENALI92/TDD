@@ -18,9 +18,9 @@ public class Dictionary
     {
         if(Name != null)
         {
-            return true ;
+            return false ;
         }
-        return false;
+        return true;
     }
 
 }
