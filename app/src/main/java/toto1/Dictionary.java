@@ -33,9 +33,9 @@ public class Dictionary
 
     public String getTranslation(String Translate)
     {
-        //if(this.Translate1 == Translate)return this.Translate2;
-        //if(this.Translate2 == Translate)return this.Translate1;
-        return "against";
+        if(this.Translate1 == Translate)return this.Translate2;
+        if(this.Translate2 == Translate)return this.Translate1;
+        return "Erreur";
     }
 
 }
