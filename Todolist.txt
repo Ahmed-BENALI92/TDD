@@ -1,1 +1,2 @@
-[]
+[]Creer une classe Dictionary 
+[]Creer une classe Dictionary test 

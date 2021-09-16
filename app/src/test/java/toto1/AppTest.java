@@ -5,10 +5,18 @@ package toto1;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.assertThat; 
+import static org.hamcrest.Matchers.*;
 
 public class AppTest {
     @Test public void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
+
+    @Test  public void testDictionaryName() 
+        {
+        Dictionary dict = new Dictionary();
+        assertThat(dict.getName(), equalTo("Example"));
+        }
 }
